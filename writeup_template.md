@@ -79,6 +79,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 As a first step, I decided to do data augmentation process where I applied random brightness, rotation, translation, affine function etc. and then the data has been added to the classes where there were less than 1000 data with the data tranformation process, described earlier.
 
 Here is the example of data augmentation process:
+
 ![alt text][image9]
 
 After that I applied grayscaling 
