@@ -127,25 +127,32 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
 I first chose normal LeNet model I used in previous assignment and then I added a drop out layer to it.There was a minor        change in the performance (0.933 to 0.941 ), so I changed the model to LeNet2 in the code. It was derived from  Sermanet/LeCun model used specially for the traffic sign classification.
 
 * What were some problems with the initial architecture?
+
 The accuracy was low. Not sure why . Having little background in CNN it is hard to judge the exact reason for its performance.
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 There was not much change in the structure just added an extra convolution layer and added it to the flatten layer of the previous convolution layer. There was not much change in the performace (0.945) to (0.958), so not sure about the reason. Might be overfitting as training set accuracy was quite high. 
 
 * Which parameters were tuned? How were they adjusted and why?
- Learning rate and batch size ,it was trial and error according to performance. 
+
+Learning rate and batch size ,it was trial and error according to performance. 
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 As discussed in lecture videos dropout layer makes the prediction more uncertain which helps CNN to improve its performance by relying more on the available data.
 
 If a well known architecture was chosen:
 * What architecture was chosen? 
-  Sermanet/LeCun
+
+Sermanet/LeCun
 * Why did you believe it would be relevant to the traffic sign application?
-  It was used before by other people for traffic sign detection. Will look into the reason in more details in future.
+
+It was used before by other people for traffic sign detection. Will look into the reason in more details in future.
  
 
 ### Test a Model on New Images
